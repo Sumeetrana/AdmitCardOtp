@@ -29,6 +29,9 @@
         #button {
             text-align: center;
         }
+        #number {
+            width: 80%;
+        }
         #number:focus {
             outline: none;
             border-color: yellow;
@@ -42,9 +45,19 @@
     <h3>Welcome to AdmitKart</h3>
     <form id="form" action="/otp.html">
         
+       
         <div class="form-group">
-          <label for="number">Mobile Number</label>
-          <input type="number" class="form-control" id="number" name="mobile" placeholder="Enter mobile number"  required>
+          <label for="number">Mobile Number</label><br>
+          <select id="cars" name="cars" style="display:inline; padding: 5px;margin: 0px;">
+            <option value="91">+91</option>
+            <option value="01">+01</option>
+            <option value="02">+02</option>
+            <option value="03">+03</option>
+            <option value="04">+04</option>
+            <option value="05">+05</option>
+          </select>
+          
+          <input type="number" class="form-control" id="number" name="mobile" placeholder="Enter mobile number" style="display:inline"  required>
         </div>
         
         <button type="submit"  class="btn btn-primary" id="button" data-toggle="modal" data-target="#modalLoginForm">Get Otp</button>
